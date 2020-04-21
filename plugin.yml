@@ -1,0 +1,29 @@
+name: WizardsUHC
+version: 1.0
+author: Wolf_IV
+main: com.Wolf_IV.WizardUHC.MainW
+commands:
+  woof:
+    description: Funny command what it does is in its name
+    permission: woof.use
+  loud:
+    description: To Broadcast
+    permision: loud.use
+  spawn:
+    description: Send player to spawn
+    permission: spawn.use
+  uhc:
+    description: Sends player to uhc hub
+    permission: uhc.use
+  start:
+    description: Starts Uhc
+    permission: start.use
+  startstop:
+    description: Stop Uhc start
+    permission: startstop.use
+  starthub:
+    description: Creates a hub for the begining of the UHC
+    permission: starthub.use
+  daypass:
+    description: Pass au jour prochain
+    permissin: daypass.use
