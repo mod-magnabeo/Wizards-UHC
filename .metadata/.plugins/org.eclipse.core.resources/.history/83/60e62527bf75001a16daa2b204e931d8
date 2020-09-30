@@ -1,0 +1,47 @@
+package com.Wolf_IV.WizardUHC;
+
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+import com.Wolf_IV.WizardUHC.Commands.CLoud;
+import com.Wolf_IV.WizardUHC.Commands.CSpawn;
+import com.Wolf_IV.WizardUHC.Commands.CStart;
+import com.Wolf_IV.WizardUHC.Commands.CStartHub;
+import com.Wolf_IV.WizardUHC.Commands.CStartStop;
+import com.Wolf_IV.WizardUHC.Commands.CUhc;
+import com.Wolf_IV.WizardUHC.Commands.CWoof;
+import com.Wolf_IV.WizardUHC.tasks.TimerTasks;
+
+public class MainW extends JavaPlugin {
+	String wizN= this.getConfig().getString("wizard.player.wizN");
+	String wizF= this.getConfig().getString("wizard.player.wizN");
+	String wizP= this.getConfig().getString("wizard.player.wizN");
+
+
+	@Override
+	public void onEnable() {
+		saveDefaultConfig();
+	System.out.println("Le plugin Wizard UHC est pret a utilisation");
+	System.out.println("-Wolf_IV");
+	//Command
+	getCommand("woof").setExecutor(new CWoof());
+	getCommand("loud").setExecutor(new CLoud());
+	getCommand("spawn").setExecutor(new CSpawn());
+	getCommand("uhc").setExecutor(new CUhc(this));
+	getCommand("start").setExecutor(new CStart(this));
+	getCommand("startstop").setExecutor(new CStartStop());
+	getCommand("starthub").setExecutor(new CStartHub());
+	//Command
+	getServer().getPluginManager().registerEvents(new WListeners(this), this);
+	getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
+	}
+	
+	
+	
+	@Override
+	public void onDisable() {
+	System.out.println("-Wolf_IV");
+	}
+	
+	
+}

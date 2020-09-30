@@ -1,0 +1,20 @@
+package com.Wolf_IV.WizardUHC;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.ItemStack;
+
+public class WListeners implements Listener {
+	@EventHandler
+	public void onJoin(PlayerJoinEvent event) {
+		Player player =event.getPlayer();
+		player.getInventory().clear();
+		player.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE));
+		player.getInventory().addItem(new ItemStack(Material.ACACIA_DOOR));
+		//player.getInventory().setItem(5,new ItemStack(Material.CARROT));
+		player.updateInventory();
+	}
+}

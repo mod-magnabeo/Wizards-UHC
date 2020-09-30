@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Fser" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Pser"/>
+			<item value="wizF"/>
+			<item value="wizP"/>
+			<item value="E1"/>
+			<item value="Donteg_"/>
+			<item value="E1p1"/>
+			<item value="erreur"/>
+			<item value="P"/>
+			<item value="String"/>
+			<item value="j"/>
+			<item value="&#x09;  "/>
+			<item value="      "/>
+			<item value="public String"/>
+			<item value=";"/>
+			<item value="Player"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Fser"/>
+			<item value="Nser"/>
+			<item value="Eser"/>
+			<item value="Pser1"/>
+			<item value="wizF"/>
+			<item value="E4"/>
+			<item value="E3"/>
+			<item value="E2"/>
+			<item value="Wolf_IV"/>
+			<item value="j1"/>
+			<item value="erreurNull"/>
+			<item value="p"/>
+			<item value="Player"/>
+			<item value="E1P"/>
+			<item value="    "/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1379" key="DIALOG_X_ORIGIN"/>
+		<item value="139" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

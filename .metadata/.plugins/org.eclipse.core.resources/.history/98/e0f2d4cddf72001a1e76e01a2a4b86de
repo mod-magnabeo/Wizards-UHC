@@ -1,0 +1,24 @@
+package com.Wolf_IV.WizardUHC;
+
+import java.util.Arrays;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+public class WListeners implements Listener {
+	@EventHandler
+	public void onJoin(PlayerJoinEvent event) {
+		Player player =event.getPlayer();
+		player.getInventory().clear();
+		ItemStack UHCTP = new ItemStack(Material.GOLDEN_APPLE);
+		ItemMeta customUHC =UHCTP.getItemMeta();
+		customUHC.setDisplayName("§4 Se tp a Wizards UHC");
+		customUHC.setLore(Arrays.asList("§cWizards UHC inspiréde Fate UHC", "§aPar:-Wolf_IV"));
+		player.getInventory().addItem(UHCTP);
+	}
+}

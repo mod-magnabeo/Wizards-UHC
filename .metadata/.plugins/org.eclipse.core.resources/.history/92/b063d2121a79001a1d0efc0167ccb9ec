@@ -1,0 +1,110 @@
+package com.Wolf_IV.WizardUHC.Commands;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import com.Wolf_IV.WizardUHC.MainW;
+import com.Wolf_IV.WizardUHC.tasks.TimerTasks;
+
+public class CStart implements CommandExecutor {
+	//public Player play[]=new Player[8];
+	public Player wizN ;
+	public Player wizF;
+	public Player wizP;
+	public Player ser1;
+	public Player ser2;
+	public Player ser3;
+	public Player ser4;
+	public Player ser5;
+	public Player ser6;
+
+	
+	private static MainW main;
+	public CStart(MainW mainW) {
+		this.main= mainW;
+		
+	}
+	
+	
+	
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
+		if(sender instanceof Player) {
+			if(cmd.getName().equalsIgnoreCase("start")) {
+			Player player = (Player)sender;
+			Bukkit.broadcastMessage("§cLancement de Wizards Uhc");
+			Bukkit.broadcastMessage("§cDeveloper par:");
+			Bukkit.broadcastMessage("§c-Wolf_IV");
+			Bukkit.broadcastMessage("");
+			
+			
+				
+			if(createPlayer() ==true) {
+			TimerTasks tasks = new TimerTasks(main, this);
+				tasks.runTaskTimer(main, 0, 20);
+				TimerTasks.starting=true;
+			}else {
+				player.sendMessage("§4 Il y a un probleme dans la config. Les pseudo sont mal engitrer");
+			}
+				
+			
+			return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean createPlayer() {//start
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizF")) !=null){
+			wizF = Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizF"));
+			//play[0]= wizF;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizN")) !=null){
+			wizN = Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizN"));
+			//play[1]= wizN;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizP")) !=null){
+			wizP = Bukkit.getPlayer(main.getConfig().getString("wizard.player.wizP"));
+			//play[2]= wizP;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser1")) !=null){
+			ser1 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser1"));
+			//play[3]= ser1;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser2")) !=null){
+			ser2 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser2"));
+			//play[4]= ser2;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser3")) !=null){
+			ser3 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser3"));
+			//play[5]= ser3;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser4")) !=null){
+			ser4 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser4"));
+			//play[6]= ser4;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser5")) !=null){
+			ser5 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser5"));
+			//play[7]= ser5;
+		}else {return false;}
+		
+		if(Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser6")) !=null){
+			ser6 = Bukkit.getPlayer(main.getConfig().getString("wizard.player.ser6"));
+			//play[8]= ser6;
+		}else {return false;}
+		
+		return true;
+	}//end*/
+
+}

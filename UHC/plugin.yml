@@ -1,0 +1,11 @@
+name: UHC
+version: 1.0
+author: Wolf_IV
+main: com.Wolf_IV.UHC.MainUHC
+commands: 
+  startuhc:
+    description: Starts Uhc
+    permission: startuhc.use
+  startuhcstop:
+    description: Stop Uhc start
+    permission: startuhcstop.use

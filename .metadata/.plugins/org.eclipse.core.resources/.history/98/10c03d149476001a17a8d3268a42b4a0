@@ -1,0 +1,64 @@
+package com.Wolf_IV.WizardUHC.tasks;
+
+import java.util.Random;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import com.Wolf_IV.WizardUHC.MainW;
+
+public class TimerTasks extends BukkitRunnable {
+	Random rand =new Random();
+	private MainW main;
+	public TimerTasks(MainW mainW) {
+		this.main= mainW;
+	}
+int timerS=10;
+public static boolean starting;
+public static boolean stop= false;
+	@Override
+	public void run() {
+		if(timerS>0) {
+			Bukkit.broadcastMessage("Lancement de l'UHC dans "+timerS+"s");
+			timerS--;
+			if(stop==true) {
+				Bukkit.broadcastMessage("Lancement du UHC Annulé");
+				stop=false;
+				cancel();
+			}
+		} else if(timerS==0) {
+			Bukkit.broadcastMessage("Lancement de l'UHC");
+			timerS--;
+			starting=false;
+			Location tp =new Location(Bukkit.getWorld("worldSpawn"), 0.5, 80, 0.3, -180, -34);
+			Location block =new Location(Bukkit.getWorld("worldSpawn"), 0, 120, 0);
+			for(int ix=-100; ix<100; ix++) {
+				for(int iz=-100; iz<100; iz++) {
+				block = new Location(Bukkit.getWorld("worldSpawn"), ix, 120, iz);
+				block.getBlock().setType(Material.AIR);
+				int nub=0;
+				for(int i=0; i<=8;i++) {
+					if(main.play[i] != null) {
+					tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(2000)-1000, 80, rand.nextInt(2000)-1000, 0, 0);
+					main.play[i].teleport(tp);
+					Bukkit.broadcastMessage(main.play[i].getName()+"A été tp");
+					}else {
+						nub++;
+						
+					}
+					}
+				if(nub>0) {
+				Bukkit.broadcastMessage("§Il y a"+nub+" joueur non connecté ou mal engister");
+				}
+				
+				}
+			}
+		}
+
+	}
+	
+	
+
+}

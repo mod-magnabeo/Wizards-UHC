@@ -1,0 +1,55 @@
+package com.Wolf_IV.WizardUHC.Role;
+
+import java.util.Arrays;
+
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import com.Wolf_IV.WizardUHC.MainW;
+import com.Wolf_IV.WizardUHC.Commands.CStart;
+
+
+public class Wiz {
+	private String nameLife="§dL'oeil de Tozhug";
+	private CStart p;
+	private MainW main;
+	public Wiz(CStart p, MainW main) {
+	this.p =p;
+	this.main= main;
+	}
+	
+	
+	public void interact(Player player, Action action, ItemStack it) {
+		if(it.getType()== Material.SPIDER_EYE && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equalsIgnoreCase(nameLife)){
+			player.sendMessage("1");
+			if(player==p.wizN || player==p.wizF || player==p.wizP) {
+				player.sendMessage("truc");
+			}else {
+				player.sendMessage("§4Il faut etre un scorcier pour ce servir de cette item");
+			}
+		}
+		
+	}
+	
+	public void recipe() {
+		ItemStack Life = new ItemStack(Material.SPIDER_EYE);
+		ItemMeta customLife =Life.getItemMeta();
+		customLife.setDisplayName(nameLife);//fait gaffe de le changer aussi dans la method on Interact
+		customLife.setLore(Arrays.asList("§cAvec un simple clic droit reanime un serviteur perdu"));
+		customLife.addEnchant(Enchantment.PROTECTION_EXPLOSIONS, 1, true);
+		customLife.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+		Life.setItemMeta(customLife);
+		
+		ShapedRecipe rLife=new ShapedRecipe(Life);
+		rLife.shape("DDD","DSD","DDD");
+		rLife.setIngredient('D', Material.DIAMOND);
+		rLife.setIngredient('S', Material.SPIDER_EYE);
+		main.getServer().addRecipe(rLife);
+	}
+}

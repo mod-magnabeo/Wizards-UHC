@@ -1,0 +1,21 @@
+package com.Wolf_IV.WizardUHC;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+import com.Wolf_IV.WizardUHC.Commands.CLoud;
+import com.Wolf_IV.WizardUHC.Commands.CWoof;
+
+public class MainW extends JavaPlugin {
+
+	@Override
+	public void onEnable() {
+	System.out.println("Le plugin Wizard UHC est pret a utilisation");
+	System.out.println("-Wolf_IV");
+	getCommand("woof").setExecutor(new CWoof());
+	getCommand("loud").setExecutor(new CLoud());
+	}
+	@Override
+	public void onDisable() {
+	System.out.println("-Wolf_IV");
+	}
+}

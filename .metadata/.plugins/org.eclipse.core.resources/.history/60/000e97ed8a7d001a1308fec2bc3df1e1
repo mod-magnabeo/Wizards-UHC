@@ -1,0 +1,139 @@
+import java.util.Random;
+
+
+public class Main {
+	Random rand = new Random();
+	public String wizN ;
+	public String wizF;
+	public String wizP;
+	public String ser1;
+	public String ser2;
+	public String ser3;
+	public String ser4;
+	public String ser5;
+	public String ser6;
+	public String Nser1;
+	public String Nser2;
+	public String Fser1;
+	public String Fser2;
+	public String Pser1;
+	public String Pser2;
+	public String ser[]= new String[6];
+	public int serc[]=new int[8];
+	
+	
+	
+	public static void main(String[] args) throws Exception{
+		Main main = new Main();
+//main.createPlayer();
+		System.out.println(main.deDegréAPourcentage(141));
+		System.out.println(main.deDegréAPourcentage(83));
+		System.out.println(main.deDegréAPourcentage(86));
+		System.out.println(main.deDegréAPourcentage(50));
+	}
+	
+	
+	public double deDegréAPourcentage(double x) {
+		//transfére degrés a pourcentage
+		return x/360*100;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void createPlayer() {//start
+		
+		 boolean matchW=false;
+		 int i;
+		 int rando;
+		 int choose;
+		 int choose2;
+		 String container = null;
+		 
+		 
+
+			ser1 = "Wolf1";
+			ser[0]=ser1;
+			
+			
+			
+
+			ser2 = "Jamie2";
+			ser[1]=ser2;
+		
+			
+			
+
+			ser3 = "yism3";
+			ser[2]=ser3;
+		
+			
+			
+
+			ser4 = "minecraft4";
+			ser[3]=ser4;
+			
+			
+			
+
+			ser5 = "Technoblade5";
+			ser[4]=ser5;
+			
+			
+			
+			
+		
+		
+		
+		
+			ser6 = "Bob6";
+			ser[5]=ser6;
+			
+			
+			
+			
+		 rando=rand.nextInt(500)+75;
+			for(i=0;i<=rando;i++) {
+				choose=rand.nextInt(6);
+				choose2=rand.nextInt(6);
+				container=ser[choose2];
+				ser[choose2]=ser[choose];
+				ser[choose]=container;
+				}
+			
+			
+			Nser1=ser[0];
+			Nser2=ser[1];
+			Fser1=ser[2];
+			Fser2=ser[3];
+			Pser1=ser[4];
+			Pser2=ser[5];
+		System.out.println("Equipe Necromancié "+Nser1+" et "+Nser2);
+		System.out.println("Equipe Feu "+Fser1+" et "+Fser2);
+		System.out.println("Equipe Pierre "+Pser1+" et "+Pser2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}//end
+	
+
+}

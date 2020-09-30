@@ -1,0 +1,28 @@
+package com.Wolf_IV.WizardUHC.Role;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
+
+import com.Wolf_IV.WizardUHC.MainW;
+import com.Wolf_IV.WizardUHC.Commands.CStart;
+
+public class WizN {
+	
+	
+	private CStart p;
+	private MainW main;
+	public WizN(CStart p, MainW main) {
+	this.p =p;
+	this.main= main;
+	}
+	
+	
+	public void interact(Player player, Action action) {
+		
+	}
+	
+	public void recipe() {
+		
+	}
+
+}
