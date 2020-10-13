@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
 <fullyQualifiedTypeName name="org.bukkit.scoreboard.DisplaySlot"/>
 <fullyQualifiedTypeName name="org.bukkit.scoreboard.Team"/>
 <fullyQualifiedTypeName name="org.bukkit.event.block.Action"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.Role.Temple"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.tasks.RoleShuffle"/>
+<fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.command.CStartCount"/>
 </qualifiedTypeNameHistroy>

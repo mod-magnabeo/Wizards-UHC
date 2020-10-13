@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\Wolf\Desktop\ServerWizardCreation\BungeeCord\Server\spawn" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\Wolf\Desktop\ServerWizardCreation" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="478" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
@@ -72,6 +72,7 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Wolf\Desktop\ServerWizardCreation\plugins\MagmaCoin.jar"/>
 			<item value="C:\Users\Wolf\Desktop\ServerWizardCreation\plugins\WizardsUHC.jar"/>
 			<item value="C:\Users\Wolf\Desktop\ServerWizardCreation\plugins\ALL.jar"/>
 			<item value="C:\Users\Wolf\Desktop\ServerWizardCreation\BungeeCord\Server\spawn\plugins\WizardsUHC.jar"/>

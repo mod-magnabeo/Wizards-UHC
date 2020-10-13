@@ -1,0 +1,8 @@
+name: MagmaCoin
+version: 1.0
+author: Wolf_IV
+main: com.Wolf_IV.MagmaCoin.MagMain
+commands:
+  startcount:
+    description: Starts Counter
+    permission: startcount.use
