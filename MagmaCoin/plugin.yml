@@ -6,3 +6,6 @@ commands:
   startcount:
     description: Starts Counter
     permission: startcount.use
+  endcount:
+    description: Ends Counter
+    permission: endcount.use

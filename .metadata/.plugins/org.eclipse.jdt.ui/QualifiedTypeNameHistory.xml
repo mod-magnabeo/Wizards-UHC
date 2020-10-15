@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.bukkit.scoreboard.DisplaySlot"/>
-<fullyQualifiedTypeName name="org.bukkit.scoreboard.Team"/>
-<fullyQualifiedTypeName name="org.bukkit.event.block.Action"/>
-<fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.Role.WizP"/>
-<fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.Role.WizF"/>
-<fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.WListeners"/>
-<fullyQualifiedTypeName name="com.avaje.ebeaninternal.server.deploy.BeanDescriptor.EntityType"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.EntityType"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Fireball"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.WitherSkull"/>
@@ -55,9 +48,16 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.tasks.TimerIncant"/>
 <fullyQualifiedTypeName name="org.bukkit.Location"/>
-<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.Role.Temple"/>
-<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.WizardUHC.tasks.RoleShuffle"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.command.CStartCount"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.writing.Read"/>
+<fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.writing.Write"/>
+<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
 </qualifiedTypeNameHistroy>

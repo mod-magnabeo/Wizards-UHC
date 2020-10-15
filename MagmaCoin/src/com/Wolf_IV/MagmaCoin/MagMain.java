@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.Wolf_IV.MagmaCoin.command.CEndCount;
 import com.Wolf_IV.MagmaCoin.command.CStartCount;
 
 
@@ -12,6 +13,7 @@ public class MagMain extends JavaPlugin implements Listener{
 	@Override
 	public void onEnable() {
 		getCommand("startcount").setExecutor(new CStartCount());
+		getCommand("endcount").setExecutor(new CEndCount(cstartcount));
 		getServer().getPluginManager().registerEvents(new MListeners(cstartcount), this);
 	}
 	
