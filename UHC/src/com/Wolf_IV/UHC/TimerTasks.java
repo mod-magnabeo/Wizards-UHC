@@ -172,6 +172,24 @@ public class TimerTasks extends BukkitRunnable {
 			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
 			if(UHCListener.TJ1!=null)UHCListener.TJ1.teleport(tp);
 			if(UHCListener.TJ2!=null)UHCListener.TJ2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TR1!=null)UHCListener.TR1.teleport(tp);
+			if(UHCListener.TR2!=null)UHCListener.TR2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TC1!=null)UHCListener.TC1.teleport(tp);
+			if(UHCListener.TC2!=null)UHCListener.TC2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TI1!=null)UHCListener.TI1.teleport(tp);
+			if(UHCListener.TI2!=null)UHCListener.TI2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TL1!=null)UHCListener.TL1.teleport(tp);
+			if(UHCListener.TL2!=null)UHCListener.TL2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TP1!=null)UHCListener.TP1.teleport(tp);
+			if(UHCListener.TP2!=null)UHCListener.TP2.teleport(tp);
+			tp =new Location(Bukkit.getWorld("worldSpawn"), rand.nextInt(1000)-500, 255, rand.nextInt(1000)-500, 0, 0);
+			if(UHCListener.TO1!=null)UHCListener.TO1.teleport(tp);
+			if(UHCListener.TO2!=null)UHCListener.TO2.teleport(tp);
 			
 				
                 TimerProt tasks = new TimerProt();
