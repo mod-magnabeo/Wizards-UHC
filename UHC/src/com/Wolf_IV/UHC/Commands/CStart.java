@@ -52,6 +52,11 @@ public class CStart implements CommandExecutor {
 					//DyeColor.LIME
 					//DyeColor.PINK
 					//DyeColor.ORANGE
+					Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "gamerule keepInventory true");
+					Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "time set day");
+					Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "gamerule naturalRegeneration false");
+					Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "difficulty easy");
+					
 					playerO.getInventory().setHeldItemSlot(0);
 					 ItemStack Green = new ItemStack(Material.INK_SACK, 1, (short)0, DyeColor.MAGENTA.getData());
 					ItemMeta customG = Green.getItemMeta();

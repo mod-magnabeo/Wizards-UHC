@@ -1,0 +1,71 @@
+package com.Wolf_IV.WizardUHC;
+
+import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+public class Kit {
+
+
+
+	public static void UhcArena(Player player) {
+		player.setGameMode(GameMode.SURVIVAL);
+		player.getInventory().clear();
+		Location spawn = new Location(Bukkit.getWorld("worldSpawn"), 190000, 87, 171, -180, 4);
+		player.teleport(spawn);
+		player.getInventory().setHeldItemSlot(0);
+		ItemStack custom = new ItemStack(Material.DIAMOND_SWORD);
+		player.getInventory().setItemInHand(custom);
+		custom = new ItemStack(Material.DIAMOND_HELMET);
+		player.getInventory().setHelmet(custom);
+		custom = new ItemStack(Material.DIAMOND_CHESTPLATE);
+		player.getInventory().setChestplate(custom);
+		custom = new ItemStack(Material.DIAMOND_LEGGINGS);
+		player.getInventory().setLeggings(custom);
+		custom = new ItemStack(Material.DIAMOND_BOOTS);
+		player.getInventory().setBoots(custom);
+		custom = new ItemStack(Material.LAVA_BUCKET);
+		player.getInventory().setItem(8, custom);
+		player.getInventory().setItem(7, custom);
+		custom = new ItemStack(Material.GOLDEN_APPLE, 7);
+		player.getInventory().setItem(5, custom);
+		custom = new ItemStack(Material.COBBLESTONE, 128);
+		player.getInventory().setItem(6, custom);
+		custom = new ItemStack(Material.BOW, 1);
+		player.getInventory().setItem(2, custom);
+		custom = new ItemStack(Material.FISHING_ROD, 1);
+		player.getInventory().setItem(1, custom);
+		custom = new ItemStack(Material.WATER_BUCKET);
+		player.getInventory().setItem(4, custom);
+		player.getInventory().addItem(custom);
+		custom = new ItemStack(Material.ARROW, 128);
+		player.getInventory().addItem(custom);
+		custom = new ItemStack(Material.DIAMOND_PICKAXE);
+		player.getInventory().addItem(custom);
+		
+	}
+	
+	public static void KbArena(Player player) {
+		player.setGameMode(GameMode.ADVENTURE);
+		player.getInventory().clear();
+		Location spawn = new Location(Bukkit.getWorld("worldSpawn"), 1379983, 122, -119, 2, 4);
+		player.teleport(spawn);
+		player.getInventory().setHeldItemSlot(0);
+		ItemStack Stick = new ItemStack(Material.STICK);
+		ItemMeta customStick =Stick.getItemMeta();
+		customStick.addEnchant(Enchantment.KNOCKBACK, 4, true);
+		customStick.setDisplayName("§aSpleefer");
+		Stick.setItemMeta(customStick);
+		player.getInventory().setItemInHand(Stick);
+	}
+	
+	public static void BSpleefArena(Player player) {
+		player.sendMessage("§4MiniJeu pas fini");
+	}
+	
+}

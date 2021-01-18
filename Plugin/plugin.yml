@@ -1,0 +1,42 @@
+name: WizardsUHC
+version: 1.0
+author: Wolf_IV
+main: com.Wolf_IV.WizardUHC.MainW
+commands:
+  woof:
+    description: Funny command what it does is in its name
+  loud:
+    description: To Broadcast
+  spawn:
+    description: Send player to spawn
+  uhc:
+    description: Sends player to uhc hub
+    permission: uhc.use
+  startwiz:
+    description: Starts Uhc
+    permission: startwiz.use
+  startwizstop:
+    description: Stop Uhc start
+    permission: startwizstop.use
+  starthub:
+    description: Creates a hub for the begining of the UHC
+    permission: starthub.use
+  daypass:
+    description: Pass au jour prochain
+    permission: daypass.use
+  getprep:
+    description: Permet de avoir des item spacial
+    permission: getprep.use
+  fpvpoff:
+    description: Permet de retirer les limite de pvp
+    permission: fpvpoff.use
+  fpvpon:
+    description: Permet de activer les limite de pvp
+    permission: fpvpon.use
+  revive:
+    description: Permet de te revive
+  t:
+    description: Permet de parler en equipe
+  effectregister:
+    description: Permet de redonner les effet
+    permission: effectregister.use
