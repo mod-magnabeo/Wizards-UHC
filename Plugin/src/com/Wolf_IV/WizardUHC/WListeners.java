@@ -521,7 +521,7 @@ public class WListeners implements Listener {
 		ItemStack it =event.getItem();
 
 		if(it == null) return;
-		if(it.getType()== Material.GOLDEN_APPLE) {
+		if(it.getType()== Material.GOLDEN_APPLE && TimerTasks.Ingame) {
 			if(it.hasItemMeta() && it.getItemMeta().hasLore()) {
 				player.removePotionEffect(PotionEffectType.ABSORPTION);
 				player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 5*(int)player.getMaxHealth(), 1));
