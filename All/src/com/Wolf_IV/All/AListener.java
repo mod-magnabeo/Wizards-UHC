@@ -3,6 +3,7 @@ package com.Wolf_IV.All;
 import java.util.Random;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,6 +14,10 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 public class AListener implements Listener {
+	
+	public Location locReCentre(Location loc) {
+		return new Location(loc.getWorld(),loc.getX()+0.5F, loc.getY()+0.5F,loc.getZ()+0.5F);
+	}
 	@EventHandler
 	   public void onBlockBreak(BlockBreakEvent event) {
 	       Material block = event.getBlock().getType();
@@ -21,7 +26,7 @@ public class AListener implements Listener {
 	           event.setCancelled(true);
 	          event.getBlock().getDrops().clear();
 	 
-	          event.getPlayer().getWorld().dropItemNaturally(event.getPlayer().getLocation(), new ItemStack(Material.IRON_INGOT));
+	          event.getPlayer().getWorld().dropItemNaturally(locReCentre(event.getBlock().getLocation()), new ItemStack(Material.IRON_INGOT));
 	          event.getPlayer().giveExp(1);
 	 
 	        return;
@@ -31,7 +36,7 @@ public class AListener implements Listener {
 	           event.setCancelled(true);
 	          event.getBlock().getDrops().clear();
 	 
-	          event.getPlayer().getWorld().dropItemNaturally(event.getPlayer().getLocation(), new ItemStack(Material.GOLD_INGOT));
+	          event.getPlayer().getWorld().dropItemNaturally(locReCentre(event.getBlock().getLocation()), new ItemStack(Material.GOLD_INGOT));
 	          event.getPlayer().giveExp(1);
 	        return;
 	      }
@@ -39,7 +44,7 @@ public class AListener implements Listener {
 	    	   Random rand = new Random();
 	    	   int r= rand.nextInt(30)+1;
 	    	   if(r==1) {
-	           event.getPlayer().getWorld().dropItemNaturally(event.getBlock().getLocation(), new ItemStack(Material.APPLE));
+	           event.getPlayer().getWorld().dropItemNaturally(locReCentre(event.getBlock().getLocation()), new ItemStack(Material.APPLE));
 	    	   }
 	        return;
 	      }
