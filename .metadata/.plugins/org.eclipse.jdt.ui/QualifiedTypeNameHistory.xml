@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.bukkit.entity.EntityType"/>
-<fullyQualifiedTypeName name="org.bukkit.entity.Fireball"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.WitherSkull"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.LargeFireball"/>
@@ -59,5 +57,7 @@
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.writing.Read"/>
 <fullyQualifiedTypeName name="com.Wolf_IV.MagmaCoin.writing.Write"/>
+<fullyQualifiedTypeName name="com.Wolf_IV.All.MainA"/>
+<fullyQualifiedTypeName name="com.Wolf_IV.All.Timer"/>
 <fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
 </qualifiedTypeNameHistroy>

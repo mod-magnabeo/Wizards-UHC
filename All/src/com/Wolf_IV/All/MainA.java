@@ -11,12 +11,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.Wolf_IV.All.AListener;
+import com.Wolf_IV.All.commands.CMeetUp;
 
 
 public class MainA extends JavaPlugin implements Listener{
 	@Override
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(new AListener(), this);
+		getCommand("meetup").setExecutor(new CMeetUp(this));
 	}
 	
 	

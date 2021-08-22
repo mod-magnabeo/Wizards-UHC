@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Scoreboard" key="selection"/>
+		<item value="Break" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Break"/>
 			<item value="Scoreboard"/>
 			<item value="Scoreborad"/>
 			<item value="Bukkit.broadcast"/>
@@ -22,7 +23,6 @@
 			<item value="String"/>
 			<item value="j"/>
 			<item value="&#x09;  "/>
-			<item value="      "/>
 		</list>
 		<list key="replacehistory">
 			<item value="Fser"/>

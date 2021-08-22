@@ -24,7 +24,6 @@ import com.Wolf_IV.WizardUHC.Commands.CStart;
 import com.Wolf_IV.WizardUHC.tasks.LittleThings;
 import com.Wolf_IV.WizardUHC.tasks.TimerNecro;
 import com.Wolf_IV.WizardUHC.tasks.TimerProt;
-
 import net.minecraft.server.v1_8_R1.ShapedRecipes;
 
 public class WizP {
